@@ -71,4 +71,9 @@ table{
 
 th{
 	text-align					:left;
+    
+}
+
+table,tr{
+    padding-bottom               :30px;
 }
