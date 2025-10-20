@@ -67,6 +67,7 @@ article a:hover{
 table{
 	width						:100%;
 	color						:#E6E6E6;
+    table-layout : fixed;
 }
 
 th{
