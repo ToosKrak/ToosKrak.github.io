@@ -28,11 +28,34 @@
     <body>
 
         <h2>Plaatjes, filmpjes en verdere onnozelheden</h2>
+		<p>En als je dan op een plaatje klikt, zal een nieuw plaatje verschijnen.</p>
+		<img id="MarkFoggo" onclick="swapImageMaFo()" src="../Media/Plaatjes/MarkFoggo/1.jpg" height="500px"/>
+		<p>27 juni 2025 in het Slachthuis, Foto's door Chris Stevenet.</p>
+		<hr>
+		<img id="Popprijs" onclick="swapImagePoPr()" src="../Media/Plaatjes/Popprijs/1.jpg" height="500px"/>
+		<p>03 mei 2024 wonnen we met overtuiging de Popprijs van Amstel- en Meerlanden, Foto's door een vriend van Noah.</p>
     </body>
 
 
 	<footer>
+        <hr>
 		<p>Contact: eskalatieband@gmail.com</p>
 		<p>&COPY; Toos Krak 2025</p>
 	</footer>
 </html>
+
+
+
+
+<script>
+	function swapImageMaFo() {
+		var imageDisplayed = document.getElementById('MarkFoggo');
+		number = Math.floor(Math.random() * 20)+1;
+		imageDisplayed.src = "../Media/Plaatjes/MarkFoggo/"+number+".jpg";
+	}
+	function swapImagePoPr() {
+		var imageDisplayed = document.getElementById('Popprijs');
+		number = Math.floor(Math.random() * 16)+1;
+		imageDisplayed.src = "../Media/Plaatjes/Popprijs/"+number+".jpg";
+	}
+</script>
