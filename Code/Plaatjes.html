@@ -30,12 +30,27 @@
 
         <h2>Plaatjes, filmpjes en verdere onnozelheden</h2>
 		<p>En als je dan op een plaatje klikt, zal een nieuw plaatje verschijnen.</p>
-		<img id="MarkFoggo" onclick="swapImageMaFo()" src="../Media/Plaatjes/MarkFoggo/1.jpg" height="500px"/>
-		<p>27 juni 2025 in het Slachthuis, Foto's door Nanna Sernesky.</p>
+		
+		<table>
+			<td>
+				<img class = plaatjes id="MarkFoggoNS" onclick="swapImageMaFoNS()" src="../Media/Plaatjes/MarkFoggoNS/1.jpg">
+				<p>27 juni 2025 in het Slachthuis, Foto's door <a href="https://www.instagram.com/nannasr1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><b>Nanna Sernesky</b></a>.</p>
+			</td>
+			<td>
+				<img class = plaatjes id="MarkFoggoCS" onclick="swapImageMaFoCS()" src="../Media/Plaatjes/MarkFoggoCS/1.jpg">
+				<p>Hetzelfde evenement, maar dan foto's door <a href="https://www.chrisstevenet.nl/"><b>Chris Stevenet</b></a></p>
+			</td>
+		</table>
+		
 		<hr>
-		<img id="Popprijs" onclick="swapImagePoPr()" src="../Media/Plaatjes/Popprijs/1.jpg" height="500px"/>
-		<p>03 mei 2024 wonnen we met overtuiging de Popprijs van Amstel- en Meerlanden. Foto's door een vriend van Noah.</p>
-    </body>
+		<table>
+			<tr>
+				<img class = plaatjes id="Popprijs" onclick="swapImagePoPr()" src="../Media/Plaatjes/Popprijs/1.jpg">
+				<p>03 mei 2024 wonnen we met overtuiging de Popprijs van Amstel- en Meerlanden. Foto's door <a href="https://www.instagram.com/drieszs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><b>Dries Heijmen</b></a>.</p>
+			</tr>
+		</table>
+	
+	</body>
 
 
 	<footer>
@@ -49,10 +64,15 @@
 
 
 <script>
-	function swapImageMaFo() {
-		var imageDisplayed = document.getElementById('MarkFoggo');
+	function swapImageMaFoNS() {
+		var imageDisplayed = document.getElementById('MarkFoggoNS');
 		number = Math.floor(Math.random() * 20)+1;
-		imageDisplayed.src = "../Media/Plaatjes/MarkFoggo/"+number+".jpg";
+		imageDisplayed.src = "../Media/Plaatjes/MarkFoggoNS/"+number+".jpg";
+	}
+	function swapImageMaFoCS() {
+		var imageDisplayed = document.getElementById('MarkFoggoCS');
+		number = Math.floor(Math.random() * 12)+1;
+		imageDisplayed.src = "../Media/Plaatjes/MarkFoggoCS/"+number+".jpg";
 	}
 	function swapImagePoPr() {
 		var imageDisplayed = document.getElementById('Popprijs');

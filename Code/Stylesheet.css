@@ -58,6 +58,10 @@ article a:hover{
 	background-color:			#ffff00;
 }
 
+a{
+	color:						#81afff;
+}
+
 table{
 	width:						100%;
 	color:						#E6E6E6;
@@ -66,16 +70,42 @@ table{
 
 th{
 	text-align:					left;
-    
+
 }
 
 table,tr{
     padding-bottom:				30px;
 }
 
+td{
+	vertical-align: 			top;
+}
 
 article.blog{
 	background-color: 			#E6E6E6;
 	color:						#1A1D22;
 	padding:					10px;
+}
+
+img.plaatjes{
+	max-height:					500px;
+	max-width:					90%;
+	padding:					2px;
+	align-content:				top;
+}
+
+.hide {
+  display: 						none;
+}
+
+.myDIV:hover + .hide {
+  display: 						block;
+}
+
+img.bandleden{
+	width:						100%;
+}
+
+td.bandleden{
+	padding:					1%
 }
