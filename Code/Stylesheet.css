@@ -21,17 +21,25 @@ footer {
 }
 
 nav table {
-	border:						2px solid #1A1D22;
 	font-family:				sans-serif;
 	font-weight:				bold;
 	padding:					1em;
 	background-color:			#E6E6E6;
 	width:						100%;
+	margin:						0 auto;
+	border-collapse: 			collapse;
+    border-style: 				hidden;
 }
 
 nav td {
 	text-align:					center;
+	vertical-align: 			middle;
+	border:						2px solid #1A1D22;
+	padding: 					20px;
 }
+
+
+
 
 nav a{
 	color:						#1A1D22;
