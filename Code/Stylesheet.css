@@ -3,7 +3,7 @@
 @media only screen and (orientation: portrait) {
   	html{
 		background-image:			url("../Media/blokje.svg");
-		background-size: 20%;
+		background-size: 10%;
 	}
 }
 @media only screen and (orientation: landscape) {
