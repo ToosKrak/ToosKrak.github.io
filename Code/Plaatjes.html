@@ -30,24 +30,39 @@
 
         <h2>Plaatjes, filmpjes en verdere onnozelheden</h2>
 		<p>En als je dan op een plaatje klikt, zal een nieuw plaatje verschijnen.</p>
-		
+
+		<table>
+			<td>
+				<img class = plaatjes id="DGWeiver" onclick="swapImageDGW()" src="../Media/Plaatjes/DGWeiver/1.jpg">
+				<p>19 oktober 2025 speelden we in de Grote Weiver met Nas Drovje en Perestrojska. Foto's door <a href="https://www.instagram.com/bonomeltosti/" target="_blank" rel="noopener noreferrer"><b>Cheyenne Hegberg</b></a>.</p>
+			</td><td></td>
+		</table>
+		<hr>
+
+		<table>
+			<td>
+				<img class = plaatjes id="Haltpop" onclick="swapImageHaPo()" src="../Media/Plaatjes/Haltpop/1.jpeg">
+				<p>19 juli 2025 speelden we op Haltpop! Foto's door <a href="https://www.instagram.com/annestuijfbergen/" target="_blank" rel="noopener noreferrer"><b>Anne Stuijfbergen</b></a>.</p>
+			</td><td></td>
+		</table>
+		<hr>
 		<table>
 			<td>
 				<img class = plaatjes id="MarkFoggoNS" onclick="swapImageMaFoNS()" src="../Media/Plaatjes/MarkFoggoNS/1.jpg">
-				<p>27 juni 2025 in het Slachthuis, Foto's door <a href="https://www.instagram.com/nannasr1"><b>Nanna Sernesky</b></a>.</p>
+				<p>27 juni 2025 in het Slachthuis, Foto's door <a href="https://www.instagram.com/nannasr1" target="_blank" rel="noopener noreferrer"><b>Nanna Sernesky</b></a>.</p>
 			</td>
 			<td>
 				<img class = plaatjes id="MarkFoggoCS" onclick="swapImageMaFoCS()" src="../Media/Plaatjes/MarkFoggoCS/1.jpg">
-				<p>Hetzelfde evenement, maar dan foto's door <a href="https://www.chrisstevenet.nl/"><b>Chris Stevenet</b></a></p>
+				<p>Hetzelfde evenement, maar dan foto's door <a href="https://www.chrisstevenet.nl/" target="_blank" rel="noopener noreferrer"><b>Chris Stevenet</b></a></p>
 			</td>
 		</table>
 		
 		<hr>
 		<table>
-			<tr>
+			<td>
 				<img class = plaatjes id="Popprijs" onclick="swapImagePoPr()" src="../Media/Plaatjes/Popprijs/1.jpg">
-				<p>03 mei 2024 wonnen we met overtuiging de Popprijs van Amstel- en Meerlanden. Foto's door <a href="https://www.instagram.com/drieszs"><b>Dries Heijmen</b></a>.</p>
-			</tr>
+				<p>03 mei 2024 wonnen we met overtuiging de Popprijs van Amstel- en Meerlanden. Foto's door <a href="https://www.instagram.com/drieszs" target="_blank" rel="noopener noreferrer"><b>Dries Heijmen</b></a>.</p>
+			</td><td></td>
 		</table>
 	
 	</body>
@@ -78,5 +93,15 @@
 		var imageDisplayed = document.getElementById('Popprijs');
 		number = Math.floor(Math.random() * 16)+1;
 		imageDisplayed.src = "../Media/Plaatjes/Popprijs/"+number+".jpg";
+	}
+	function swapImageHaPo() {
+		var imageDisplayed = document.getElementById('Haltpop');
+		number = Math.floor(Math.random() * 14)+1;
+		imageDisplayed.src = "../Media/Plaatjes/Haltpop/"+number+".jpeg";
+	}
+	function swapImageDGW() {
+		var imageDisplayed = document.getElementById('DGWeiver');
+		number = Math.floor(Math.random() * 14)+1;
+		imageDisplayed.src = "../Media/Plaatjes/DGWeiver/"+number+".jpg";
 	}
 </script>
