@@ -102,10 +102,28 @@ td{
 	vertical-align: 			top;
 }
 
-article.blog{
+.blog{
 	background-color: 			#E6E6E6;
 	color:						#1A1D22;
-	padding:					10px;
+	padding:					1%;
+}
+
+a.bloglink{
+	color:						#00348f;
+}
+
+a.bloglink:hover{
+	color:						#E6E6E6;
+	background-color:			#00348f;
+}
+
+
+
+h4.blog{
+	font-size:					60%;
+	text-align: 				right;
+	padding-right:				10%;
+	color:						#1A1D22;
 }
 
 img.plaatjes{
