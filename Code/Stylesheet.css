@@ -33,36 +33,39 @@ footer {
 	font-size:					70%;
 }
 
-nav table {
-	font-family:				sans-serif;
+ /* Style the topnav */
+nav ul{
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	background-color: #E6E6E6;
+  	font-size: medium;
 	font-weight:				bold;
-	padding:					1em;
-	background-color:			#E6E6E6;
-	width:						100%;
-	margin:						0 auto;
-	border-collapse: 			collapse;
-    border-style: 				hidden;
 }
 
-nav td {
-	text-align:					center;
-	vertical-align: 			middle;
-	border:						2px solid #1A1D22;
-	padding: 					20px;
+nav ul li {
+  float: left;
+  border-right: 2px solid #1A1D22;
 }
 
-
-
-
-nav a{
-	color:						#1A1D22;
-	text-decoration:			none;
+/* Style links in topnav */
+nav ul li a {
+	display: block;
+	color: #1A1D22;
+	padding: 1em;
+	text-decoration: none;
 }
 
-nav a:hover{
-	color:						#E6E6E6; 
-	background-color:			#1A1D22;
-}
+/* Change color on hover */
+nav ul li a:hover {
+	background-color: #1A1D22;
+	color: #E6E6E6;
+	
+} 
+
+
+
 
 h1 {
 	color:						#D9141B
