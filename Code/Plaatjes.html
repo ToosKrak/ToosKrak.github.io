@@ -28,7 +28,13 @@
         <h2>Plaatjes, filmpjes en verdere onnozelheden</h2>
 		<p>En als je dan op een plaatje klikt, zal een nieuw plaatje verschijnen. Voor filmpjes werkt dat niet. Als je op een filmpje klikt zet je het simpelweg op pauze.</p>
 		<hr>
-
+		<table>
+			<td>
+				<img class = plaatjes id="StudioGonz" onclick="swapImageSG()" src="../Media/Plaatjes/StudioGonz/1.jpg">
+				<p>19 december 2025 speelden we in Studio Gonz te Gouda, met Mark Foggo en zijn Skasters. Foto's door Rob Merkestijn.</p>
+			</td><td></td>
+		</table>
+		<hr>
 
 		<table>
 			<td>
@@ -37,8 +43,6 @@
 			</td><td></td>
 		</table>
 		<hr>
-
-
 
 		<table>
 			<td>
@@ -109,5 +113,10 @@
 		var imageDisplayed = document.getElementById('DGWeiver');
 		number = Math.floor(Math.random() * 14)+1;
 		imageDisplayed.src = "../Media/Plaatjes/DGWeiver/"+number+".jpg";
+	}
+	function swapImageSG() {
+		var imageDisplayed = document.getElementById('StudioGonz');
+		number = Math.floor(Math.random() * 18)+1;
+		imageDisplayed.src = "../Media/Plaatjes/StudioGonz/"+number+".jpg";
 	}
 </script>
