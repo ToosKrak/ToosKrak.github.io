@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" class="main">
     <head>
 		<title>Home</title>
 		<meta charset="utf-8">
@@ -11,7 +11,7 @@
 	</head>
 
 	<header>
-		<img style="padding-top:30px;padding-bottom: 10px; width:20%" src="./Media/Logo_titel.png" alt="Logo" >
+		<img class="toplogo" src="./Media/Logo_titel.png" alt="Logo" >
 	</header>
 
     <body>
@@ -55,3 +55,13 @@
 	</footer>
 
 </html>
+
+
+
+<script>
+	function swapImageSG() {
+		var imageDisplayed = document.getElementById('StudioGonz');
+		number = Math.floor(Math.random() * 18)+1;
+		imageDisplayed.src = "../Media/Plaatjes/StudioGonz/"+number+".jpg";
+	}
+</script>
