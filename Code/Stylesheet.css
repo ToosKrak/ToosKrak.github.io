@@ -117,6 +117,8 @@ td{
 	vertical-align: 			top;
 }
 
+
+
 .blog{
 	background-color: 			#E6E6E6;
 	color:						#1A1D22;
@@ -132,14 +134,13 @@ a.bloglink:hover{
 	background-color:			#00348f;
 }
 
-
-
 h4.blog{
 	font-size:					60%;
 	text-align: 				right;
 	padding-right:				10%;
-	color:						#1A1D22;
 }
+
+
 
 img.plaatjes{
 	max-height:					500px;
@@ -153,7 +154,7 @@ img.plaatjes{
   display: 						none;
 }
 
-.myDIV:hover + .hide {
+.bandleden:hover + .hide {
   display: 						block;
 }
 
