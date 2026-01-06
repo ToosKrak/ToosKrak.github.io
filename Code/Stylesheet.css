@@ -12,7 +12,10 @@
 		background-size: 		2%;
 	}
 
-
+  	img.toplogo:hover + html{
+		background-image:		url("../Media/blokje.svg");
+		background-size: 		20%;
+	}
 }
 
 
