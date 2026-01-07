@@ -12,9 +12,9 @@
 		background-size: 		2%;
 	}
 
-  	.toplogoDIV:hover + html{
-		background-image:		url("../Media/blokje.svg");
-		background-size: 		20%;
+  	html:has(footer:hover){
+		background-image:		url("../Media/blokje2.svg");
+		background-size: 		2%;
 	}
 }
 
@@ -73,7 +73,6 @@ nav ul li a {
 nav ul li a:hover {
 	background-color: 			#1A1D22;
 	color: 						#E6E6E6;
-	
 } 
 
 
@@ -147,15 +146,15 @@ img.plaatjes{
 	max-width:					90%;
 	padding:					2px;
 	align-content:				top;
-	cursor: pointer;
+	cursor: 					pointer;
 }
 
 .hide {
-  display: 						none;
+  	display: 					none;
 }
 
 .bandledenDIV:hover + .hide {
-  display: 						block;
+  	display: 					block;
 }
 
 img.bandleden{
