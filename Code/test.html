@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+    html{
+        background-color: aquamarine;
+    }
+
+    .topdiv{
+	    border:						2px solid #1A1D22;
+        background-color: white;
+
+    }
+
+    .hide{
+        border:						2px solid #1A1D22;
+        display: inline-block;
+    }
+
+    html:has(.topdiv:hover){
+        background-color: blueviolet;
+        font-size: 1em;
+    }
+
+
+</style>
+</head>    
+
+
+<body>
+    <div class="hide">
+    <div class="topdiv"><p>hello world</p></div>
+    <p>lorum ipsum</p>
+
+    </div>
+</body>
+
+</html>
+
+

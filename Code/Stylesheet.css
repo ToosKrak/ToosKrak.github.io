@@ -1,74 +1,166 @@
-html{
-	background-image			:url("../Media/blok.png");
+
+
+@media only screen and (orientation: portrait) {
+  	html{
+		background-image:		url("../Media/blokje.svg");
+		background-size: 		10%;
+	}
+}
+@media only screen and (orientation: landscape) {
+  	html{
+		background-image:		url("../Media/blokje.svg");
+		background-size: 		2%;
+	}
+
+  	html:has(footer:hover){
+		background-image:		url("../Media/blokje2.svg");
+		background-size: 		2%;
+	}
 }
 
+
+img.toplogo{
+	padding-top:				30px;
+	padding-bottom: 			10px; 
+	width:						20%;
+}
+
+
+
 body {
-	font-family					:sans-serif;
-	margin-left					:auto;
-	margin-right				:auto;
-	max-width					:80%;
-	padding-bottom				:24px;
-	padding-left				:24px;
-	padding-right				:24px;
-	border						:2px solid #1A1D22;
-	border-radius				:5px;
-	background-color			:#1A1D22;
-    color                       :#E6E6E6;
+	font-family:				sans-serif;
+	margin-left:				auto;
+	margin-right:				auto;
+	max-width:					80%;
+	padding-bottom:				24px;
+	padding-left:				24px;
+	padding-right:				24px;
+	border:						2px solid #1A1D22;
+	border-radius:				5px;
+	background-color:			#1A1D22;
+    color:						#E6E6E6;
 }
 
 footer {
-	font-size					:70%;
+	font-size:					70%;
 }
 
-nav table {
-	border						:2px solid #1A1D22;
-	font-family					:sans-serif;
-	font-weight					:bold;
-	padding						:1em;
-	background-color			:#E6E6E6;
-	width						:100%;
+ /* Style the topnav */
+nav ul{
+	display: 					flex;
+	list-style-type: 			none;
+	margin: 					0;
+	padding: 					5px;
+	background-color: 			#E6E6E6;
+  	font-size: 					medium;
+	font-weight:				bold;
 }
 
-nav td {
-	text-align					:center;
+nav ul li {
+  float: 						left;
+  border-right: 				2px solid #1A1D22;
 }
 
-nav a{
-	color						:#1A1D22;
-	text-decoration				:none;
+/* Style links in topnav */
+nav ul li a {
+	display: 					block;
+	color: 						#1A1D22;
+	padding: 					1em;
+	text-decoration: 			none;
 }
 
-nav a:hover{
-	color						:#E6E6E6; 
-	background-color			:#1A1D22;
-}
+/* Change color on hover */
+nav ul li a:hover {
+	background-color: 			#1A1D22;
+	color: 						#E6E6E6;
+} 
+
+
+
 
 h1 {
-	color						:#D9141B
+	color:						#D9141B
 }
 
 h1.titel{
-	font-size					:200%;
+	font-size:					200%;
 }
 
-p{
-	color						:#E6E6E6;
+
+
+a:hover{
+	color:						#1A1D22;
+	background-color:			#81afff;
 }
 
 a{
-	color						:#E6E6E6;
-}
-
-article a:hover{
-	color						:#1A1D22;
-	background-color			:#ffff00;
+	color:						#81afff;
 }
 
 table{
-	width						:100%;
-	color						:#E6E6E6;
+	width:						100%;
+	color:						#E6E6E6;
+    table-layout:				fixed;
 }
 
 th{
-	text-align					:left;
+	text-align:					left;
+
+}
+
+table,tr{
+    padding-bottom:				30px;
+}
+
+td{
+	vertical-align: 			top;
+}
+
+
+
+.blog{
+	background-color: 			#E6E6E6;
+	color:						#1A1D22;
+	padding:					1%;
+}
+
+a.bloglink{
+	color:						#00348f;
+}
+
+a.bloglink:hover{
+	color:						#E6E6E6;
+	background-color:			#00348f;
+}
+
+h4.blog{
+	font-size:					60%;
+	text-align: 				right;
+	padding-right:				10%;
+}
+
+
+
+img.plaatjes{
+	max-height:					500px;
+	max-width:					90%;
+	padding:					2px;
+	align-content:				top;
+	cursor: 					pointer;
+}
+
+.hide {
+  	display: 					none;
+}
+
+.bandledenDIV:hover + .hide {
+  	display: 					block;
+}
+
+img.bandleden{
+	width:						100%;
+}
+
+td.bandleden{
+	padding:					1%
 }
