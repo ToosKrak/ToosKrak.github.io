@@ -31,10 +31,10 @@
 
 		<table>
 			<td>
-				<img class = plaatjes id="MelkwegCS" onclick="swapImageMWCS()" src="../Media/Plaatjes/MelkwegCS/1.jpg">
+				<img class = plaatjes id="MelkwegCS" onclick="swapImage('MelkwegCS',8,17,'.jpg')" src="../Media/Plaatjes/8MelkwegCS/1.jpg">
 				<p>16 januari 2026 mochten we in het voorprogramma staan van de Hardheid, die even de grote zaal van de Melkweg hadden uitverkocht. <a href="https://www.chrisstevenet.nl/" target="_blank" rel="noopener noreferrer"><b>Chris Stevenet</b></a> was er natuurlijk bij met zijn camera.</p>
 			</td><td>
-				<img class = plaatjes id="MelkwegDHF" onclick="swapImageMWDHF()" src="../Media/Plaatjes/MelkwegDHF/1.jpg">
+				<img class = plaatjes id="MelkwegDHF" onclick="swapImage('MelkwegDHF',7,17,'.jpg')" src="../Media/Plaatjes/7MelkwegDHF/1.jpg">
 				<p>Naast Chris en circa 1400 anderen stond ook <a href="https://www.instagram.com/mirala.photos/" target="_blank" rel="noopener noreferrer"><b>Daniël Hup Fernández</b></a> in de zaal en die heeft ook leuke foto's gemaakt.</p>
 			</td>
 		</table>
@@ -43,7 +43,7 @@
 
 		<table>
 			<td>
-				<img class = plaatjes id="StudioGonz" onclick="swapImageSG()" src="../Media/Plaatjes/StudioGonz/1.jpg">
+				<img class = plaatjes id="StudioGonz" onclick="swapImage('StudioGonz',6,18,'.jpg')" src="../Media/Plaatjes/6StudioGonz/1.jpg">
 				<p>19 december 2025 speelden we in Studio Gonz te Gouda met Mark Foggo en zijn Skasters. Foto's door Rob Merkestijn.</p>
 			</td><td></td>
 		</table>
@@ -59,23 +59,23 @@
 
 		<table>
 			<td>
-				<img class = plaatjes id="DGWeiver" onclick="swapImageDGW()" src="../Media/Plaatjes/DGWeiver/1.jpg">
+				<img class = plaatjes id="DGWeiver" onclick="swapImage('DGWeiver',5,14,'.jpg')" src="../Media/Plaatjes/5DGWeiver/1.jpg">
 				<p>19 oktober 2025 speelden we in de Grote Weiver met Nas Drovje en Perestrojska. Foto's door <a href="https://www.instagram.com/bonomeltosti/" target="_blank" rel="noopener noreferrer"><b>Cheyenne Hegberg</b></a>.</p>
 			</td>
 
 			<td>
-				<img class = plaatjes id="Haltpop" onclick="swapImageHaPo()" src="../Media/Plaatjes/Haltpop/1.jpeg">
+				<img class = plaatjes id="Haltpop" onclick="swapImage('Haltpop',4,14,'.jpeg')" src="../Media/Plaatjes/4Haltpop/1.jpeg">
 				<p>19 juli 2025 speelden we op Haltpop! Foto's door <a href="https://www.instagram.com/annestuijfbergen/" target="_blank" rel="noopener noreferrer"><b>Anne Stuijfbergen</b></a>.</p>
 			</td>
 		</table>
 		<hr>
 		<table>
 			<td>
-				<img class = plaatjes id="MarkFoggoNS" onclick="swapImageMaFoNS()" src="../Media/Plaatjes/MarkFoggoNS/1.jpg">
+				<img class = plaatjes id="MarkFoggoNS" onclick="swapImage('MarkFoggoNS',3,20,'.jpg')" src="../Media/Plaatjes/3MarkFoggoNS/1.jpg">
 				<p>27 juni 2025 in het Slachthuis, Foto's door <a href="https://www.instagram.com/nannasr1" target="_blank" rel="noopener noreferrer"><b>Nanna Sernesky</b></a>.</p>
 			</td>
 			<td>
-				<img class = plaatjes id="MarkFoggoCS" onclick="swapImageMaFoCS()" src="../Media/Plaatjes/MarkFoggoCS/1.jpg">
+				<img class = plaatjes id="MarkFoggoCS" onclick="swapImage('MarkFoggoCS',2,12,'.jpg')" src="../Media/Plaatjes/2MarkFoggoCS/1.jpg">
 				<p>Hetzelfde evenement, maar dan foto's door <a href="https://www.chrisstevenet.nl/" target="_blank" rel="noopener noreferrer"><b>Chris Stevenet</b></a></p>
 			</td>
 		</table>
@@ -83,7 +83,7 @@
 		<hr>
 		<table>
 			<td>
-				<img class = plaatjes id="Popprijs" onclick="swapImagePoPr()" src="../Media/Plaatjes/Popprijs/1.jpg">
+				<img class = plaatjes id="Popprijs" onclick="swapImage('Popprijs',1,16,'.jpg')" src="../Media/Plaatjes/1Popprijs/1.jpg">
 				<p>03 mei 2024 wonnen we met overtuiging de Popprijs van Amstel- en Meerlanden. Foto's door <a href="https://www.instagram.com/drieszs" target="_blank" rel="noopener noreferrer"><b>Dries Heijmen</b></a>.</p>
 			</td><td></td>
 		</table>
@@ -102,44 +102,17 @@
 
 
 <script>
-	function swapImageMaFoNS() {
-		var imageDisplayed = document.getElementById('MarkFoggoNS');
-		number = Math.floor(Math.random() * 20)+1;
-		imageDisplayed.src = "../Media/Plaatjes/MarkFoggoNS/"+number+".jpg";
-	}
-	function swapImageMaFoCS() {
-		var imageDisplayed = document.getElementById('MarkFoggoCS');
-		number = Math.floor(Math.random() * 12)+1;
-		imageDisplayed.src = "../Media/Plaatjes/MarkFoggoCS/"+number+".jpg";
-	}
-	function swapImagePoPr() {
-		var imageDisplayed = document.getElementById('Popprijs');
-		number = Math.floor(Math.random() * 16)+1;
-		imageDisplayed.src = "../Media/Plaatjes/Popprijs/"+number+".jpg";
-	}
-	function swapImageHaPo() {
-		var imageDisplayed = document.getElementById('Haltpop');
-		number = Math.floor(Math.random() * 14)+1;
-		imageDisplayed.src = "../Media/Plaatjes/Haltpop/"+number+".jpeg";
-	}
-	function swapImageDGW() {
-		var imageDisplayed = document.getElementById('DGWeiver');
-		number = Math.floor(Math.random() * 14)+1;
-		imageDisplayed.src = "../Media/Plaatjes/DGWeiver/"+number+".jpg";
-	}
-	function swapImageSG() {
-		var imageDisplayed = document.getElementById('StudioGonz');
-		number = Math.floor(Math.random() * 18)+1;
-		imageDisplayed.src = "../Media/Plaatjes/StudioGonz/"+number+".jpg";
-	}
-	function swapImageMWCS() {
-		var imageDisplayed = document.getElementById('MelkwegCS');
-		number = Math.floor(Math.random() * 17)+1;
-		imageDisplayed.src = "../Media/Plaatjes/MelkwegCS/"+number+".jpg";
-	}
-	function swapImageMWDHF() {
-		var imageDisplayed = document.getElementById('MelkwegDHF');
-		number = Math.floor(Math.random() * 17)+1;
-		imageDisplayed.src = "../Media/Plaatjes/MelkwegDHF/"+number+".jpg";
+	let counter = [1,1,1,1,1,1,1,1];
+
+	function swapImage(id_n,id_i,topNo,format){
+		var imageDisplayed = document.getElementById(id_n);
+		let number = counter[id_i];
+		if(number != topNo){
+			counter[id_i] = counter[id_i] + 1;
+		}else{
+			counter[id_i] = 1;
+		}
+		imageDisplayed.src = "../Media/Plaatjes/" + id_i.toString() + id_n + "/" + number + format;
+		return
 	}
 </script>
