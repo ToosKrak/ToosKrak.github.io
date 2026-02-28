@@ -102,9 +102,13 @@
 
 
 <script>
-	let counter = [2,2,2,2,2,2,2,2];
+	let counter = [2,2];
 
 	function swapImage(id_n,id_i,topNo,format){
+		while(counter.length <= id_i){
+			counter.push(2);
+		}
+
 		var imageDisplayed = document.getElementById(id_n);
 		let number = counter[id_i];
 		if(number != topNo){
