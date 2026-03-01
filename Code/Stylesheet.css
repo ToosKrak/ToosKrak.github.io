@@ -4,6 +4,7 @@
   	html{
 		background-image:		url("../Media/blokje.svg");
 		background-size: 		10%;
+		font-size:x-large;
 	}
 
 
@@ -40,13 +41,13 @@
   	html{
 		background-image:		url("../Media/blokje.svg");
 		background-size: 		2%;
+		
 	}
 
   	html:has(footer:hover){
 		background-image:		url("../Media/blokje2.svg");
 		background-size: 		2%;
 	}
-
 
 
 
