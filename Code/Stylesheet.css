@@ -5,6 +5,36 @@
 		background-image:		url("../Media/blokje.svg");
 		background-size: 		10%;
 	}
+
+
+
+
+	.blogParent{
+		margin: 					5px;
+		background-color: 			#E6E6E6;
+		color:						#1A1D22;
+		display: 					flex;
+		gap: 						20px;
+		justify-content: 			space-evenly;
+		flex-direction: 			column;
+		padding: 10px;
+	}
+
+	.blogChildFig{
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		flex-direction: row;
+		gap: 5px;
+	}
+
+	.blogGrandChildFig{
+		flex-grow: 1;
+		min-width: 20px;
+		max-width: 200px;
+	}
+
+
 }
 @media only screen and (orientation: landscape) {
   	html{
@@ -15,6 +45,38 @@
   	html:has(footer:hover){
 		background-image:		url("../Media/blokje2.svg");
 		background-size: 		2%;
+	}
+
+
+
+
+
+
+
+	.blogParent{
+		margin: 					5px;
+		padding: 					10px;
+		background-color: 			#E6E6E6;
+		color:						#1A1D22;
+		display: 					flex;
+		gap: 						10px;
+		justify-content: 			space-evenly;
+	}
+
+	.blogChildText{
+		width: 80%;
+	}
+
+	.blogChildFig{
+		width: 20%;
+	}
+	.blogGrandChildFig{
+		width: 100%;
+	}
+
+	#blogBlockLeft{
+		border-right: 2px solid #1A1D22;
+		padding-right: 10px;
 	}
 }
 
@@ -117,56 +179,9 @@ td{
 }
 
 
-/* blog */
-@media only screen and (orientation: landscape){
-	.blogParent{
-		margin: 					5px;
-		padding: 					10px;
-		background-color: 			#E6E6E6;
-		color:						#1A1D22;
-		display: 					flex;
-		gap: 						10px;
-		justify-content: 			space-evenly;
-	}
 
-	.blogChildText{
-		width: 75%;
-	}
 
-	.blogChildFig{
-		width: 25%;
-	}
-	.blogGrandChildFig{
-		width: 100%;
-	}
-}
 
-@media only screen and (orientation: portrait){
-	.blogParent{
-		margin: 					5px;
-		background-color: 			#E6E6E6;
-		color:						#1A1D22;
-		display: 					flex;
-		gap: 						20px;
-		justify-content: 			space-evenly;
-		flex-direction: 			column;
-		padding: 10px;
-	}
-
-	.blogChildFig{
-		display: flex;
-		justify-content: space-evenly;
-		flex-wrap: wrap;
-		flex-direction: row;
-		gap: 5px;
-	}
-
-	.blogGrandChildFig{
-		flex-grow: 1;
-		min-width: 20px;
-		max-width: 200px;
-	}
-}
 
 
 a.bloglink{
