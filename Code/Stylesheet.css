@@ -117,12 +117,57 @@ td{
 }
 
 
+/* blog */
+@media only screen and (orientation: landscape){
+	.blogParent{
+		margin: 					5px;
+		padding: 					10px;
+		background-color: 			#E6E6E6;
+		color:						#1A1D22;
+		display: 					flex;
+		gap: 						10px;
+		justify-content: 			space-evenly;
+	}
 
-.blog{
-	background-color: 			#E6E6E6;
-	color:						#1A1D22;
-	padding:					1%;
+	.blogChildText{
+		width: 75%;
+	}
+
+	.blogChildFig{
+		width: 25%;
+	}
+	.blogGrandChildFig{
+		width: 100%;
+	}
 }
+
+@media only screen and (orientation: portrait){
+	.blogParent{
+		margin: 					5px;
+		background-color: 			#E6E6E6;
+		color:						#1A1D22;
+		display: 					flex;
+		gap: 						20px;
+		justify-content: 			space-evenly;
+		flex-direction: 			column;
+		padding: 10px;
+	}
+
+	.blogChildFig{
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		flex-direction: row;
+		gap: 5px;
+	}
+
+	.blogGrandChildFig{
+		flex-grow: 1;
+		min-width: 20px;
+		max-width: 200px;
+	}
+}
+
 
 a.bloglink{
 	color:						#00348f;
@@ -209,7 +254,7 @@ img.bandleden{
 
 
 
-
+/* Home */
 .SingleParent{
     width: 100%;
     display:					flex;
