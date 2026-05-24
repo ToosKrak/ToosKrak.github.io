@@ -22,7 +22,15 @@
 	}
 
 	.blogChildFig{
-		display: flex;
+		display: 				flex;
+		justify-content: 		space-evenly;
+		flex-wrap: 				wrap;
+		flex-direction: 		row;
+		gap: 					5px;
+	}
+
+	.blogChildText{
+		display: 				flex;
 		justify-content: 		space-evenly;
 		flex-wrap: 				wrap;
 		flex-direction: 		row;
@@ -53,7 +61,6 @@
 
 
 
-
 	.blogParent{
 		margin: 				5px;
 		padding: 				10px;
@@ -66,6 +73,11 @@
 
 	.blogChildText{
 		width: 					80%;
+		display: 				flex;
+		justify-content: 		space-around;
+		flex-wrap: 				wrap;
+		flex-direction: 		row;
+		gap: 					5px;
 	}
 
 	.blogChildFig{
@@ -75,10 +87,21 @@
 		width: 					100%;
 	}
 
+	.blogGrandChildText{
+		min-width: 				100%;
+	}
+
+
 	#blogBlockLeft{
 		border-right: 			2px solid #1A1D22;
 		padding-right: 			10px;
 	}
+
+
+	#figInTxt{
+		max-width:				45%;
+	}
+
 }
 
 
