@@ -84,7 +84,7 @@
 		width: 					20%;
 	}
 	.blogGrandChildFig{
-		width: 					100%;
+		max-width: 					100%;
 	}
 
 	.blogGrandChildText{
