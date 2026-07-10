@@ -29,7 +29,7 @@ with open(csv_data, newline='') as csvfile:
     for row in spamreader:
         total.append(row)
 
-print(total)
+# print(total)
 
 for gig in total:
     if gig[-1] == '1':
@@ -57,6 +57,10 @@ for gig in totalBev:
 totalGeweest = np.array(totalGeweest)
 totalGeweest = np.flip(totalGeweest,axis=0)
 
+NoGeweest = len(totalGeweest)
+NoAankomend = len(totalAankomend)
+
+NoAankomendGeheim = len(total)-len(totalBev)
 
 with open("CSV/Optredens.html", "w", encoding="utf-8") as f:
     f.write(header_file_content)
@@ -90,6 +94,10 @@ with open("CSV/Optredens.html", "w", encoding="utf-8") as f:
         f.write("				<td> " + date[8:10] + "-" + date[5:7] + "-" + date[0:4] + " </td>\n")
         f.write("				<td> " + gig[3] + " </td>\n")
         f.write("		    </tr>\n")
+    f.write("  		</table><hr>\n")
+
+    f.write("<p>Dat komt dus neer op " + str(NoGeweest) + " optredens die al geweest zijn en " + str(NoAankomend) + " optredens die nog komen.</p>\n")
+
     f.write(footer_file_content)
 
 
