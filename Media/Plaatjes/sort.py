@@ -1,11 +1,17 @@
 # import OS module
 import os
 # Get the list of all files and directories
-path = "./Media/Plaatjes/13Bpop"
+path = "./Media/Plaatjes/14Mixtream"
 dir_list = os.listdir(path)
+
+try:
+    os.mkdir(path + "/TMP")
+except:
+    dir_list.remove("TMP")
+
+
 first_item = dir_list[0]
 
-print(first_item[-4:])
 
 file_type = '0'
 length = 1
@@ -16,9 +22,19 @@ while file_type[0] != '.':
 
 
 
+
+
 for count, filename in enumerate(os.listdir(path)):
-    dst = str(count) + ".jpg"
+    if filename != "TMP":
+        # rename all the files
 
-    # rename all the files
-    os.rename(os.path.join(path, filename),  os.path.join(path, dst))
+        dst = str(count+1) + file_type
+        if count < 9:
+            dst = "0" + dst
 
+
+        os.rename(path + "/" + filename,  path + "/TMP/" + dst)
+
+
+for count, filename in enumerate(os.listdir(path + "/TMP")):
+    os.rename(path + "/TMP/" + filename, path + "/" + filename)
