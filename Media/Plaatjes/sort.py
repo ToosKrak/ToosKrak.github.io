@@ -1,7 +1,7 @@
 # import OS module
 import os
 # Get the list of all files and directories
-path = "./Media/Plaatjes/14Mixtream"
+path = "./Media/Plaatjes/15Stadsfabriek"
 dir_list = os.listdir(path)
 
 try:
